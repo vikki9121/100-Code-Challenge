@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay="" loop="" muted  data-wf-ignore="true" data-object-fit="cover">
+            <source src="leo.mp4" data-wf-ignore="true">          
+          </video>
+    </div>
+    <header>
+        <div class="content">
+            <h1><img src="images.jpg" style="width: 40px;" alt="">LEO🦁</h1>
+            <h2>BLOODY SWEET ⚔️🔥🔥<i>LOADING.....</i></h2>
+           
+        </div>
+    </header>
+    
+
+     <div class="countdown-container container">
+     <div class="clock row">
+        
+     
+     <!-- days --> 
+     <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+     <div class="wrap">
+     <div class="inner">
+     <div id="canvas_days" class="clock-canvas"></div>
+     <div class="text">
+     <p class="val">0</p>
+     <p class="type-days type-time">DAYS</p>
+     </div>
+     </div>
+     </div>
+     </div>
+     
+     <!-- hours --> 
+     
+     <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+     <div class="wrap">
+     <div class="inner">
+     <div id="canvas_hours" class="clock-canvas"></div>
+     <div class="text">
+     <p class="val">0</p>
+     <p class="type-hours type-time">HOURS</p>
+     </div>
+     </div>
+     </div>
+     </div>
+     
+     <!-- minutes --> 
+     <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+     <div class="wrap">
+     <div class="inner">
+     <div id="canvas_minutes" class="clock-canvas"></div>
+     <div class="text">
+     <p class="val">0</p>
+     <p class="type-minutes type-time">MINUTES</p>
+     </div>
+     </div>
+     </div>
+     </div>
+     
+     <!-- seconds --> 
+     <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+     <div class="wrap">
+     <div class="inner">
+     <div id="canvas_seconds" class="clock-canvas"></div>
+     <div class="text">
+     <p class="val">0</p>
+     <p class="type-seconds type-time">SECONDS</p>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     
+     </div>
+    
+     <script>
+     $('.countdown').final_countdown({
+     start: '1362139200',
+     end: '1388461320',
+     now: '1387461319'
+     });
+     
+     </script>
+        
+     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> 
+     <script type="text/javascript" src="https://www.jqueryscript.net/demo/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown/js/kinetic.js"></script> 
+     <script type="text/javascript" src="https://www.jqueryscript.net/demo/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown/jquery.final-countdown.js"></script> 
+        <script src="js.js"></script>
+</body>
+</html>

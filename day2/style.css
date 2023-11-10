@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    
+    background: linear-gradient(132deg, #ff1818, #c808d2, #ced208, #f4f90b);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 13s ease infinite;
+    -moz-animation: AnimationName 13s ease infinite;
+    animation: AnimationName 13s ease infinite;
+
+   
+
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 68%}
+    50%{background-position:100% 33%}
+    100%{background-position:0% 68%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 68%}
+    50%{background-position:100% 33%}
+    100%{background-position:0% 68%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 68%}
+    50%{background-position:100% 33%}
+    100%{background-position:0% 68%}
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+
+    
+}
+
+.left, .right{
+    flex-basis: 50%;
+    padding: 10px;
+
+}
+
+textarea{
+    width: 100%;
+    height: 28%;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 10px  20px;
+    border:0;
+    outline: 0;
+    font-size: 18px;
+}
+
+iframe{
+    width: 100%;
+    height: 95%;
+    border: 0;
+    background-color: #fff;
+    
+    padding: 10px  20px;
+    border:0;
+    outline: 0;
+    /* font-size: 18px; */
+}
+
+label i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+label{
+    display: flex;
+    align-items: center;
+    background: #0000;
+    height: 30px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CARD HOVER EFFECTS</title>
+</head>
+<body>
+    <h1 style="text-align: center;;">CARD HOVER EFFECTS</h1>
+
+    <div class="container">
+        <div class="card" data-text="Delhi"style="--img:url('delhi.jpg')"></div>
+        <div class="card" data-text="Mumbai"style="--img:url('mumbhai.jpg')"></div>
+        <div class="card" data-text="Chennai"style="--img:url('beach.jpg')"></div>
+        <div class="card" data-text="Kolkata"style="--img:url('Kolkata.jpg')"></div>
+        <div class="card" data-text="Kerala"style="--img:url('kerala.jpg')"></div>
+        <div class="card" data-text="Banglore"style="--img:url('bang.jpg')"></div>
+    </div>
+    <script>
+        const cards =document.querySelectorAll('.card');
+        cards.forEach(card =>{
+            card.onmouseover = function(e){
+                const x =e.pagex-card.offsetLeft;
+                const y =e.pageY-card.offsetTop;
+                card.style.setProperty('--x',x+'px');
+                card.style.setProperty('--y',y+'px');
+                
+            }
+        })
+    </script>
+</body>
+</html>

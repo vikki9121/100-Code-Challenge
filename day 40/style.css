@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    
+
+}
+
+.container{
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height:320px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+}
+
+.container .card::before{
+
+    content: attr(data-text);
+    position:absolute;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: transparent;
+    transform: rotate(-45deg);
+    -webkit-text-stroke: 1px #fff;
+    text-align: center;
+    z-index:1;
+
+
+    
+}
+
+.container .card::after
+{
+    content: '';
+    position: absolute;
+    inset:0;
+    background: var(--img);
+   
+    clip-path: circle(0px at 0 0);
+    z-index: 2;
+    transition :clip-path 0.5s ease-in-out;
+
+}
+.container .card:hover:after{
+    clip-path: circle(150px at var(--x) var(--y));
+}

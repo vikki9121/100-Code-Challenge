@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body{
+  background-image: url(https://hashdork.com/wp-content/uploads/2022/01/How-to-Install-and-use-MetaMask-on-Your-Browser-In-depth-Guide.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+button{
+  background-image: linear-gradient(to right, #ff6b6b, #ff8e8e);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover{
+  background-image: linear-gradient(to right, #ff8e8e, #ff6b6b);
+}
+
+h1, h2, h3{
+  color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-button{
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.social-button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

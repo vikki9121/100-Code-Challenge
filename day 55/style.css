@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_dev{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(4, 21, 79);
+    display: grid;
+    place-items: center;
+}
+
+.music_container{
+    width: 39rem;
+    height: 55rem;
+    background-color:rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgb(0, 0, 0 /10);
+    border-radius: 10px;
+    backdrop-filter: blur(240px);
+    padding: 2rem;
+    text-align: center;
+    
+   
+}
